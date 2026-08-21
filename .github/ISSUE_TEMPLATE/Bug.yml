@@ -24,7 +24,7 @@ body:
       description: 服务器支持Java和基岩版互通，请务必选对
       options:
         - Java版
-        - 基岩版（Bedrock）
+        - 基岩版
     validations:
       required: true
 
@@ -43,8 +43,8 @@ body:
     id: client_version
     attributes:
       label: 📌 Java版请填写具体版本号
-      description: Java版玩家必填（如 26.2），基岩版玩家请直接留空
-      placeholder: 例如：1.20.4（仅Java版需要）
+      description: Java版玩家必填，基岩版玩家请直接留空
+      placeholder: 例如：26.2（仅Java版需要）
     validations:
       required: false
 
@@ -52,8 +52,8 @@ body:
     id: what_happened
     attributes:
       label: 📝 发生了什么？
-      description: 用大白话描述你遇到的异常情况
-      placeholder: 我在主城点传送牌时，游戏突然卡死掉线了...
+      description: 请描述你遇到的异常情况
+      placeholder: 我无法使用tpa进行传送
     validations:
       required: true
 
@@ -63,9 +63,7 @@ body:
       label: 🔄 复现步骤
       description: 按什么顺序操作能触发这个Bug？
       placeholder: |
-        1. 输入 /spawn 回主城
-        2. 右键点击红色传送牌
-        3. 选择“资源世界”
+        1. 输入 /tpa 传送玩家
     validations:
       required: true
 
